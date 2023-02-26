@@ -1,0 +1,10 @@
+.main_pro_div {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.pro_div {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}

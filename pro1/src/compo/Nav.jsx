@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Hom  from './Home'
+import Products from  "./Pro"
 import './nav.css'
 // import logo
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   return (
     <Router>
 <div className='nav_top'>
-<button className='log_btn'><h4>Sign up or logIn</h4></button>
+<a href="C:\Users\Dell\Desktop\affable-fang-3484\pro1\src\compo\Pro.jsx"><button className='log_btn'> <h4>Sign up or logIn</h4></button></a>
 </div>
 
 
@@ -18,10 +19,10 @@ const Navbar = () => {
         </Link>
         
             <div>
-                <Link to="/Home" >jiha </Link>
+                <Link to="/" >Home </Link>
             </div>
           <div>
-            <Link to="/man">Man</Link>
+            <Link to="/pro">Products</Link>
           </div>
           <div>
             <Link to="/woman">Woman</Link>
@@ -31,7 +32,7 @@ const Navbar = () => {
       </nav>
       <Routes>
         <Route path="/Home" exact component={Hom} />
-        <Route path="/man" component={Man} />
+        <Route path="/pro" component={Products} />
         <Route path="/woman" component={Woman} />
       </Routes>
     </Router>
